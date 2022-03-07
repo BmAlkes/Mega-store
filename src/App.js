@@ -7,7 +7,7 @@ import ProductsList from "./pages/ProductList/ProductsList";
 import Register from "./pages/Register/Register";
 
 const App = () => {
-    return <Cart />;
+    return <Home />;
 };
 
 export default App;

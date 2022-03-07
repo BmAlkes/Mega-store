@@ -1,17 +1,26 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 const Container = styled.div`
     height: 60px;
+    ${mobile({ height: "90px" })}
 `;
 
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    ${mobile({
+        padding: "10px",
+        flexDirection: "column",
+        JustifyContent: "center",
+        alignItems: "center",
+    })}
 `;
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
+    ${mobile({ display: "none" })}
 `;
 const Left = styled.div`
     flex: 1;
@@ -23,6 +32,7 @@ const Right = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    ${mobile({ JustifyContent: "center" })}
 `;
 const Center = styled.div`
     flex: 1;
@@ -34,6 +44,7 @@ const SearchContainer = styled.div`
     align-items: center;
     margin-left: 25px;
     padding: 5px;
+    ${mobile({ display: "none" })}
     .search {
         color: lightgray;
         font-size: 18px;
@@ -51,12 +62,14 @@ const Logo = styled.h1`
     &&:nth-child(odd) {
         color: #282b29;
     }
+    ${mobile({ fontSize: "24px" })}
 `;
 
 const MenuItem = styled.div`
     font-size: 14px;
     cursor: pointer;
     margin-left: 25px;
+    ${mobile({ fontSize: "16px" })}
 `;
 
 export {

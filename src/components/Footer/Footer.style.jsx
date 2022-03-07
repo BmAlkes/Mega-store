@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 const Container = styled.footer`
     display: flex;
+    @media (max-width: 380px) {
+        flex-direction: column;
+    }
 `;
 const Left = styled.div`
     flex: 1;

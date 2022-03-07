@@ -1,4 +1,5 @@
 import React from "react";
+import { mobile } from "../../responsive";
 import {
     Container,
     Wrapper,
@@ -21,7 +22,7 @@ const Navbar = () => {
                 <Left>
                     <Language>EN</Language>
                     <SearchContainer>
-                        <Input />
+                        <Input placeholder="Search" />
                         <BsSearch className="search" />
                     </SearchContainer>
                 </Left>

@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import { mobile } from "../../responsive";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
     padding: 50px;
     display: flex;
+    ${mobile({ padding: "10px", flexDirection: "column" })}
 `;
 const ImgContainer = styled.div`
     flex: 1;
@@ -12,6 +14,7 @@ const Img = styled.img`
     width: 100%;
     height: 90vh;
     object-fit: cover;
+    ${mobile({ height: "60vh" })}
 `;
 const InfoContainer = styled.div`
     flex: 1;
